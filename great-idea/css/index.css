@@ -9,7 +9,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ol,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -31,9 +31,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+/*ol, ul {
 	list-style: none;
-}
+}*/
 blockquote, q {
 	quotes: none;
 }
@@ -65,10 +65,6 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
-div {
-	/*display: flex;*/
-}
-
 h1 {
 	font-size: 75px;
 	text-align: center;
@@ -79,7 +75,6 @@ h3 {
 	font-size: 28px;
 }
 .menu-container {
-	/*border: 1px solid red;*/
 	width: 100%;
 	padding: 5px 2px 0 0;
 	height: 45px;
@@ -88,13 +83,11 @@ h3 {
 }
 
 .menu-container nav {
-	width: 100%;
-	
+	width: 100%;	
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-between;
 	align-items: center;
-	/*border: 1px solid blue;*/
 }
 
 .menu-container a:link {
@@ -106,19 +99,22 @@ h3 {
 .menu-container a:hover {
 	text-decoration: underline;
 }
+.menu-container a::visited {
+	color: #a7a7a7;
+}
+.menu-container a::active {
+	color: #a7a7a7;
+}
 
 .header-container .flex-column {
-	/*border: 1px solid blue;*/
 	width: 425px;
 	height: 400px;
 	display: flex;
 	flex-direction: column;
-	/*justify-content: center;*/
 	align-items: center;
 }
 
 .header-container {
-	/*border: 1px solid red;*/
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
@@ -128,8 +124,6 @@ h3 {
 }
 
 .header-item {
-	/*display: flex;*/
-	/*border: 1px solid red;*/
 	flex-direction: column;
 	justify-content: center;
 	width: 425px;
@@ -145,25 +139,18 @@ h3 {
 }
 
 .section-container {
-	/*border: 1px dashed black;*/
-	/*margin-top: 15px;*/
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	/*flex-wrap: nowrap;*/
 }
 
 .content-container {
-	/*border: 1px solid yellow;*/
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	
-	/*flex-flow: flex-start wrap;*/
 }
 
 .content-item {
-	/*border: 1px solid green;*/
 	width: 425px;
 	padding: 25px 5px 25px 5px;
 }
@@ -184,11 +171,6 @@ h3 {
 	background-position: right;
 }
 
-#header-item-image-container {
-	/*display: flex;*/
-	
-}
-
 #great-idea-logo-image {
 	width: 183px;
 	height: 36px;
@@ -201,11 +183,9 @@ h3 {
 #features-about-section {
 	border-top: 1.5px solid black;
 	margin-top: 40px;
-	/*padding-top: 25px;*/
 }
 
 #mid-page-accent-image {
-	/*display: flex;*/
 	width: 100%;
 	height: 182px;
 	background-image: url("/great-idea/img/mid-page-accent.jpg");
@@ -216,19 +196,12 @@ h3 {
 
 #services-product-vision-section {
 	border-bottom: 1.5px solid black;
-	/*padding-bottom: 25px;*/
-}
-
-#header-item-image-container img {
-	
 }
 
 #footer-copyright {
 	text-align: center;
 	font-size: 14px;
 }
-
-
 /****************** SERVICES PAGE STYLING ***************/
 
 .services-content-item input {
@@ -250,19 +223,16 @@ h3 {
 .services-header-image {
 	width: 100%;
 	height: 200px;
-	/*border: 1px solid pink;*/
 	background-image: url("/great-idea/img/services-header.jpg");
 	background-size: cover;
 	background-position: auto;
 }
 
 .services-header-item {
-	margin: 25px 0 25px 0;
-	
+	margin: 25px 0 25px 0;	
 }
 
 .services-content-container {
-	/*border-bottom: 2px solid red*/
 	width: 100%;
 	display: flex;
 	flex-flow: row wrap;
@@ -289,7 +259,7 @@ h3 {
 }
 
 .bottom-item {
-	width: 400px;
+	width: 380px;
 	margin: 20px 20px 20px 0;
 }
 
@@ -300,6 +270,7 @@ h3 {
 	background-size: cover;
 	background-position: auto;
 }
+
 
 
 
